@@ -13,7 +13,7 @@
 - 按完整会话日志、每次实际模型与用量估算主对话费用，切换模型不重算历史价格。
 - 通用设置 → 暖纸与雾绿：控制主题、竹影和动画，也可恢复默认外观。
 
-**当前版本：0.1.2。** 已验证 DSH **0.2.2-rc.1** 的原生 Web 运行时与 macOS 桌面应用。DSH 扩展接口仍可能变化；其他版本尚未验证。
+**当前版本：0.1.3。** 已验证 DSH **0.2.2-rc.1** 的原生 Web 运行时与 macOS 桌面应用。DSH 扩展接口仍可能变化；其他版本尚未验证。
 
 ## 安装
 
@@ -47,10 +47,13 @@ npm run check
 
 ```sh
 npx playwright install chromium
+npm run verify:redaction
 npm run verify:native
 ```
 
 验收提取本机应用运行时，在临时 DSH_HOME 中使用离线模型和虚构余额，不使用个人 profile 或产生模型费用。可通过 `PREVIEW_CHROMIUM` 指定已有 Chromium。运行时提取脚本目前支持 macOS 的默认应用路径。
+
+脱敏回归使用虚构凭证触发真实失败入口，检查测试报告与终端输出。报告写入前会去除 URL 查询值、常见凭证和本机路径；失败截图仅保留本地，不纳入 Git。发布前仍应检查新增证据是否含有私人内容。
 
 证据：[界面验收](artifacts/e2e.json) · [费用回放](artifacts/host-replay.json) · [动画采样](artifacts/bamboo-motion.json) · [暗色截图](artifacts/native-dark.png)。所有仓库截图使用离线测试数据。
 

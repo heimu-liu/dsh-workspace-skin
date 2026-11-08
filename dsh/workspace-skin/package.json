@@ -1,6 +1,6 @@
 {
   "name": "@laishu/dsh-workspace-skin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "description": "暖纸与雾绿：淡竹影、扣费来源余额与主对话模型费用估算",
   "type": "module",
@@ -21,10 +21,11 @@
     "build": "node scripts/build.mjs",
     "check": "node --check src/host.js && node --check src/cost.js && node --check src/client.cjs",
     "prepack": "npm run build",
-    "verify:native": "node scripts/verify-native.mjs"
+    "verify:native": "node scripts/verify-native.mjs",
+    "verify:redaction": "node tests/log-redaction.e2e.cjs"
   },
   "dependencies": {
-    "zod": "4.4.3"
+    "zod": "4.6.7"
   },
   "engines": {
     "node": ">=22"

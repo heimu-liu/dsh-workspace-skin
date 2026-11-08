@@ -2,10 +2,11 @@ const {chromium}=require('playwright');
 const fs=require('node:fs/promises');
 const path=require('node:path');
 const assert=require('node:assert/strict');
+const {redact,sanitize}=require('../scripts/redact-log.cjs');
 const out=path.join(__dirname,'../artifacts');
 const control=process.env.DSH_TEST_CONTROL;
-if(!process.env.DSH_TEST_URL||!control?.startsWith('/private/tmp/dsh-skin-'))throw new Error('Use the isolated fixture runtime');
 (async()=>{
+ if(!process.env.DSH_TEST_URL||!control?.startsWith('/private/tmp/dsh-skin-'))throw new Error('Use the isolated fixture runtime');
  const browser=await chromium.launch({headless:true,executablePath:process.env.PREVIEW_CHROMIUM});
  const checks=[],errors=[];let page;
  const note=(name,details={})=>checks.push({name,pass:true,...details});
@@ -13,8 +14,8 @@ if(!process.env.DSH_TEST_URL||!control?.startsWith('/private/tmp/dsh-skin-'))thr
  try{
   await setControl({});
   page=await browser.newPage({viewport:{width:1440,height:960},deviceScaleFactor:1});
-  page.setDefaultTimeout(10000);page.on('pageerror',e=>errors.push(e.message));
-  page.on('console',m=>{if(m.type()==='error')errors.push(m.text().slice(0,500));});
+  page.setDefaultTimeout(10000);page.on('pageerror',e=>errors.push(redact(e.message)));
+  page.on('console',m=>{if(m.type()==='error')errors.push(redact(m.text()).slice(0,500));});
   await page.goto(process.env.DSH_TEST_URL);
   await page.locator('.dsh-ws-finance').waitFor();
   if(await page.getByRole('button',{name:'Continue',exact:true}).count())await page.getByRole('button',{name:'Continue',exact:true}).click();
@@ -78,6 +79,6 @@ if(!process.env.DSH_TEST_URL||!control?.startsWith('/private/tmp/dsh-skin-'))thr
    await page.screenshot({path:path.join(out,name),fullPage:true});note('viewport-'+width,layout);
   }
   assert.deepEqual(errors,[]);note('no-browser-errors');
- }catch(e){checks.push({name:'failure',pass:false,error:e.stack});if(page)await page.screenshot({path:path.join(out,'failure.png'),fullPage:true}).catch(()=>{});process.exitCode=1;}
- finally{await setControl({});await browser.close();await fs.writeFile(path.join(out,'e2e.json'),JSON.stringify({runtime:'DSH 0.2.2-rc.1, isolated native Web UI',fixture:'offline model and fake account only; no paid calls',checks,errors,pass:checks.every(c=>c.pass)},null,2)+'\n');console.log(JSON.stringify({checks,errors},null,2));}
-})();
+ }catch(e){checks.push({name:'failure',pass:false,error:redact(e.stack)});if(page)await page.screenshot({path:path.join(out,'failure.png'),fullPage:true}).catch(()=>{});process.exitCode=1;}
+ finally{await setControl({});await browser.close();await fs.writeFile(path.join(out,'e2e.json'),JSON.stringify(sanitize({runtime:'DSH 0.2.2-rc.1, isolated native Web UI',fixture:'offline model and fake account only; no paid calls',checks,errors,pass:checks.every(c=>c.pass)}),null,2)+'\n');console.log(JSON.stringify(sanitize({checks,errors}),null,2));}
+})().catch(e=>{console.error(redact(e.stack||e));process.exitCode=1;});

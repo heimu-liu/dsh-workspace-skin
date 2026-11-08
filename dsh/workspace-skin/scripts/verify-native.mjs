@@ -3,15 +3,22 @@ import {mkdtemp,mkdir,writeFile,readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {randomUUID} from 'node:crypto';
+import {redact} from './redact-log.cjs';
+// Buffer subprocess output before sanitizing: secrets can span stream chunks.
+function runSync(file,args,options={}){
+ const output=execFileSync(file,args,{...options,stdio:'pipe'});
+ if(output.length)console.log(redact(output.toString()));
+}
+async function main(){
 const project=path.resolve(fileURLToPath(new URL('../',import.meta.url)));
 const root=await mkdtemp('/private/tmp/dsh-skin-verify-');
 const home=path.join(root,'home'),workspace=path.join(root,'workspace'),control=path.join(root,'control.json');
 let runtime=process.env.DSH_TEST_RUNTIME;
-if(!runtime){execFileSync('python3',[path.join(project,'scripts/extract-runtime.py'),root],{stdio:'inherit'});runtime=path.join(root,'dsh');}
+if(!runtime){runSync('python3',[path.join(project,'scripts/extract-runtime.py'),root]);runtime=path.join(root,'dsh');}
 let host=path.join(project,'src/host.js');
 if(process.env.DSH_TEST_PACKAGE){
  const prefix=path.join(root,'package');
- execFileSync('npm',['install','--prefix',prefix,'--ignore-scripts','--omit=dev','--no-audit','--no-fund','--cache','/private/tmp/dsh-skin-npm-cache',path.resolve(process.env.DSH_TEST_PACKAGE)],{stdio:'inherit'});
+ runSync('npm',['install','--prefix',prefix,'--ignore-scripts','--omit=dev','--no-audit','--no-fund','--cache','/private/tmp/dsh-skin-npm-cache',path.resolve(process.env.DSH_TEST_PACKAGE)]);
  host=path.join(prefix,'node_modules/@laishu/dsh-workspace-skin/src/host.js');
 }
 await mkdir(workspace,{recursive:true});await mkdir(path.join(home,'storages'),{recursive:true});
@@ -30,17 +37,22 @@ try{
  const url=await new Promise((resolve,reject)=>{
   const timer=setInterval(()=>{const found=logs.match(/dsh web: (http:\/\/[^\s]+)/);if(found){clearInterval(timer);clearTimeout(timeout);resolve(found[1]);}},50);
   const timeout=setTimeout(()=>{clearInterval(timer);reject(new Error('Isolated host startup timed out'));},30000);
-  server.once('exit',code=>{clearInterval(timer);clearTimeout(timeout);reject(new Error('Isolated host exited: '+code+'\n'+logs.replace(/\?token=\S+/g,'?token=[redacted]')));});
+  server.once('error',error=>{clearInterval(timer);clearTimeout(timeout);reject(error);});
+  server.once('exit',code=>{clearInterval(timer);clearTimeout(timeout);reject(new Error('Isolated host exited: '+code+'\n'+redact(logs)));});
  });
  console.log('Running native E2E in isolated DSH 0.2.2-rc.1');
- const child=spawn(process.execPath,[path.join(project,'tests/e2e.cjs')],{cwd:project,env:{...env,DSH_TEST_URL:url},stdio:'inherit'});
- const code=await new Promise(resolve=>child.on('exit',resolve));
+ const child=spawn(process.execPath,[path.join(project,'tests/e2e.cjs')],{cwd:project,env:{...env,DSH_TEST_URL:url},stdio:['ignore','pipe','pipe']});
+ let childLogs='';child.stdout.on('data',b=>childLogs+=b);child.stderr.on('data',b=>childLogs+=b);
+ const code=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('close',resolve);});
+ console.log(redact(childLogs));
  if(code!==0)throw new Error('Browser acceptance failed');
  const replay=JSON.parse(await readFile(env.DSH_TEST_REPORT,'utf8'));
  if(!replay.pass)throw new Error('Native log replay failed');
- console.log(`Passed ${replay.cases.length} native replay cases. Reports: ${path.join(project,'artifacts')}`);
+ console.log(`Passed ${replay.cases.length} native replay cases. Reports: artifacts/`);
 }finally{
  server.kill('SIGINT');
- await new Promise(resolve=>{const timer=setTimeout(()=>{server.kill('SIGKILL');resolve();},5000);server.once('exit',()=>{clearTimeout(timer);resolve();});});
- console.log('Isolated runtime stopped; temporary evidence retained at '+root);
+ if(server.exitCode===null&&server.signalCode===null)await new Promise(resolve=>{const timer=setTimeout(()=>{server.kill('SIGKILL');resolve();},5000);server.once('exit',()=>{clearTimeout(timer);resolve();});});
+ console.log('Isolated runtime stopped; temporary evidence retained locally.');
 }
+}
+main().catch(error=>{console.error(redact(error.stack||error));process.exitCode=1;});
