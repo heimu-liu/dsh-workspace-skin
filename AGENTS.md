@@ -1,4 +1,6 @@
-# DSH Workspace Skin
+# DSH Projects
+
+- Put DSH plugins and related projects under `dsh/<project>/`. Run build and verification commands from the relevant project directory.
 
 - Verify the installed DSH version and native interfaces before changing integrations.
 - Prefer official theme tokens and stable UI extension slots. Keep decorative layers pointer-transparent and hidden from accessibility APIs.
