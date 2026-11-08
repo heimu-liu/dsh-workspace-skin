@@ -1,0 +1,19 @@
+node_modules/
+*.tgz
+.DS_Store
+.env
+.env.*
+*.log
+*.bak
+# Personal research, local installation records and historical design drafts.
+research/
+design/
+assets/
+install/development.patch.yml
+artifacts/*
+!artifacts/native-*.png
+!artifacts/bamboo-motion-before.png
+!artifacts/bamboo-motion-after.png
+!artifacts/bamboo-motion.json
+!artifacts/e2e.json
+!artifacts/host-replay.json

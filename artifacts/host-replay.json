@@ -1,0 +1,170 @@
+{
+  "kind": "native DSH SessionStore + projection replay integration",
+  "cases": [
+    {
+      "name": "cache-and-output",
+      "expected": {
+        "low": 3.02,
+        "high": 3.02,
+        "priced": 1,
+        "missing": 0
+      },
+      "actual": {
+        "low": 3.02,
+        "high": 3.02,
+        "priced": 1,
+        "missing": 0,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "settlement-replacement",
+      "expected": {
+        "low": 3.02,
+        "priced": 1
+      },
+      "actual": {
+        "low": 3.02,
+        "high": 3.02,
+        "priced": 1,
+        "missing": 0,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "paid-retry",
+      "expected": {
+        "low": 6.04,
+        "priced": 2
+      },
+      "actual": {
+        "low": 6.04,
+        "high": 6.04,
+        "priced": 2,
+        "missing": 0,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "mixed-models",
+      "expected": {
+        "low": 14.42,
+        "priced": 2
+      },
+      "actual": {
+        "low": 14.42,
+        "high": 14.42,
+        "priced": 2,
+        "missing": 0,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "unknown-model",
+      "expected": {
+        "low": 0,
+        "priced": 0,
+        "missing": 1
+      },
+      "actual": {
+        "low": 0,
+        "high": 0,
+        "priced": 0,
+        "missing": 1,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "missing-usage",
+      "expected": {
+        "low": 0,
+        "priced": 0,
+        "missing": 1
+      },
+      "actual": {
+        "low": 0,
+        "high": 0,
+        "priced": 0,
+        "missing": 1,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "before-price-snapshot",
+      "expected": {
+        "priced": 0,
+        "missing": 1
+      },
+      "actual": {
+        "low": 0,
+        "high": 0,
+        "priced": 0,
+        "missing": 1,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "expired-price-snapshot",
+      "expected": {
+        "priced": 0,
+        "missing": 1
+      },
+      "actual": {
+        "low": 0,
+        "high": 0,
+        "priced": 0,
+        "missing": 1,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "potential-peak",
+      "expected": {
+        "low": 3.02,
+        "high": 6.04
+      },
+      "actual": {
+        "low": 3.02,
+        "high": 6.04,
+        "priced": 1,
+        "missing": 0,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    },
+    {
+      "name": "missing-route",
+      "expected": {
+        "priced": 0,
+        "missing": 1
+      },
+      "actual": {
+        "low": 0,
+        "high": 0,
+        "priced": 0,
+        "missing": 1,
+        "priceFrom": 1793894400000,
+        "priceUntil": 1796486400000
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

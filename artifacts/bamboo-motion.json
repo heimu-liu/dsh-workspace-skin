@@ -1,0 +1,907 @@
+{
+  "intervalMs": 1500,
+  "before": [
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999853, 0.0171254, -0.0171254, 0.999853, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999815, -0.0192362, 0.0192362, 0.999815, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999828, 0.0185207, -0.0185207, 0.999828, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999854, 0.0171092, -0.0171092, 0.999854, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999878, 0.0156415, -0.0156415, 0.999878, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999783, 0.0208207, -0.0208207, 0.999783, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999698, 0.024579, -0.024579, 0.999698, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999724, 0.0235118, -0.0235118, 0.999724, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99975, 0.0223697, -0.0223697, 0.99975, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999798, 0.0200907, -0.0200907, 0.999798, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999737, 0.02295, -0.02295, 0.999737, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999763, 0.0217713, -0.0217713, 0.999763, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999789, 0.0205214, -0.0205214, 0.999789, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999816, 0.0192037, -0.0192037, 0.999816, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999841, 0.0178224, -0.0178224, 0.999841, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999842, 0.01777, -0.01777, 0.999842, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999798, -0.0200907, 0.0200907, 0.999798, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999737, 0.02295, -0.02295, 0.999737, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999763, 0.0217713, -0.0217713, 0.999763, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999789, 0.0205214, -0.0205214, 0.999789, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999816, 0.0192037, -0.0192037, 0.999816, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999841, 0.0178224, -0.0178224, 0.999841, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999815, 0.0192362, -0.0192362, 0.999815, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999828, 0.0185207, -0.0185207, 0.999828, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999854, 0.0171092, -0.0171092, 0.999854, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999878, 0.0156415, -0.0156415, 0.999878, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999783, 0.0208207, -0.0208207, 0.999783, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999698, 0.024579, -0.024579, 0.999698, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999724, 0.0235118, -0.0235118, 0.999724, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99975, 0.0223697, -0.0223697, 0.99975, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999798, -0.0200907, 0.0200907, 0.999798, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999737, 0.02295, -0.02295, 0.999737, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999763, 0.0217713, -0.0217713, 0.999763, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999789, 0.0205214, -0.0205214, 0.999789, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999816, 0.0192037, -0.0192037, 0.999816, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999841, 0.0178224, -0.0178224, 0.999841, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999847, 0.0174906, -0.0174906, 0.999847, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999783, -0.0208207, 0.0208207, 0.999783, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999698, 0.024579, -0.024579, 0.999698, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999724, 0.0235118, -0.0235118, 0.999724, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99975, 0.0223697, -0.0223697, 0.99975, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999798, 0.0200907, -0.0200907, 0.999798, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999737, 0.02295, -0.02295, 0.999737, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999763, 0.0217713, -0.0217713, 0.999763, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999789, 0.0205214, -0.0205214, 0.999789, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999816, 0.0192037, -0.0192037, 0.999816, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999841, 0.0178224, -0.0178224, 0.999841, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999815, -0.0192362, 0.0192362, 0.999815, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999828, 0.0185207, -0.0185207, 0.999828, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999854, 0.0171092, -0.0171092, 0.999854, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999878, 0.0156415, -0.0156415, 0.999878, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999783, 0.0208207, -0.0208207, 0.999783, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999698, 0.024579, -0.024579, 0.999698, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999724, 0.0235118, -0.0235118, 0.999724, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99975, 0.0223697, -0.0223697, 0.99975, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999815, -0.0192362, 0.0192362, 0.999815, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999776, 0.021155, -0.021155, 0.999776, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999803, 0.0198708, -0.0198708, 0.999803, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999828, 0.0185207, -0.0185207, 0.999828, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999854, 0.0171092, -0.0171092, 0.999854, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999878, 0.0156415, -0.0156415, 0.999878, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    }
+  ],
+  "after": [
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999841, 0.017811, -0.017811, 0.999841, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999743, -0.0226549, 0.0226549, 0.999743, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999544, 0.03021, -0.03021, 0.999544, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999557, 0.0297514, -0.0297514, 0.999557, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999573, 0.0292155, -0.0292155, 0.999573, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999752, 0.0222637, -0.0222637, 0.999752, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999507, 0.0313872, -0.0313872, 0.999507, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99951, 0.0312957, -0.0312957, 0.99951, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999515, 0.0311338, -0.0311338, 0.999515, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999746, 0.0225159, -0.0225159, 0.999746, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999512, 0.0312237, -0.0312237, 0.999512, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999519, 0.0310259, -0.0310259, 0.999519, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999527, 0.0307554, -0.0307554, 0.999527, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999537, 0.0304106, -0.0304106, 0.999537, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99955, 0.0299903, -0.0299903, 0.99955, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999852, 0.0171869, -0.0171869, 0.999852, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999746, -0.0225159, 0.0225159, 0.999746, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999512, 0.0312237, -0.0312237, 0.999512, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999519, 0.0310259, -0.0310259, 0.999519, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999527, 0.0307554, -0.0307554, 0.999527, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999537, 0.0304106, -0.0304106, 0.999537, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99955, 0.0299903, -0.0299903, 0.99955, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999743, 0.0226549, -0.0226549, 0.999743, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999544, 0.03021, -0.03021, 0.999544, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999557, 0.0297514, -0.0297514, 0.999557, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999573, 0.0292155, -0.0292155, 0.999573, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999752, 0.0222637, -0.0222637, 0.999752, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999507, 0.0313872, -0.0313872, 0.999507, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99951, 0.0312957, -0.0312957, 0.99951, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999515, 0.0311338, -0.0311338, 0.999515, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999746, -0.0225159, 0.0225159, 0.999746, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999512, 0.0312237, -0.0312237, 0.999512, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999519, 0.0310259, -0.0310259, 0.999519, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999527, 0.0307554, -0.0307554, 0.999527, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999537, 0.0304106, -0.0304106, 0.999537, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99955, 0.0299903, -0.0299903, 0.99955, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "stem",
+      "transform": "matrix(0.999847, 0.0175199, -0.0175199, 0.999847, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-stem"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999752, -0.0222637, 0.0222637, 0.999752, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999507, 0.0313872, -0.0313872, 0.999507, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99951, 0.0312957, -0.0312957, 0.99951, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999515, 0.0311338, -0.0311338, 0.999515, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999746, 0.0225159, -0.0225159, 0.999746, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999512, 0.0312237, -0.0312237, 0.999512, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999519, 0.0310259, -0.0310259, 0.999519, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999527, 0.0307554, -0.0307554, 0.999527, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999537, 0.0304106, -0.0304106, 0.999537, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99955, 0.0299903, -0.0299903, 0.99955, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999743, -0.0226549, 0.0226549, 0.999743, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999544, 0.03021, -0.03021, 0.999544, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999557, 0.0297514, -0.0297514, 0.999557, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999573, 0.0292155, -0.0292155, 0.999573, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999752, 0.0222637, -0.0222637, 0.999752, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999507, 0.0313872, -0.0313872, 0.999507, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.99951, 0.0312957, -0.0312957, 0.99951, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999515, 0.0311338, -0.0311338, 0.999515, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "branch",
+      "transform": "matrix(0.999743, -0.0226549, 0.0226549, 0.999743, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-branch"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999522, 0.0308999, -0.0308999, 0.999522, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999532, 0.0305924, -0.0305924, 0.999532, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999544, 0.03021, -0.03021, 0.999544, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999557, 0.0297514, -0.0297514, 0.999557, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    },
+    {
+      "kind": "leaf",
+      "transform": "matrix(0.999573, 0.0292155, -0.0292155, 0.999573, 0, 0)",
+      "state": "running",
+      "name": "dsh-ws-leaf"
+    }
+  ]
+}

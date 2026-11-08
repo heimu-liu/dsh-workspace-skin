@@ -1,0 +1,26 @@
+/* Only stable DSH data attributes and plugin-owned classes; no hashed selectors. */
+body[data-ws-skin]{--ws-mist:#e5ece3;--ws-surface:#f8f6f0;--ws-line:#c9cebf;--ws-ink:#28352e;--ws-muted:#58665d;--ws-accent:#38624a}
+body[data-ws-skin][data-ds-dark-theme]{--ws-mist:#303e34;--ws-surface:#2a352d;--ws-line:#495b4c;--ws-ink:#e5e9de;--ws-muted:#b7c3b6;--ws-accent:#9fbd98}
+body[data-ws-bamboo] [data-conversation-content]{isolation:isolate}
+.dsh-ws-bamboo{position:absolute;inset:3% 0 100px auto;width:54%;max-width:570px;pointer-events:none;user-select:none;z-index:-1;opacity:.20;color:#238847;overflow:hidden;contain:layout paint;mask-image:linear-gradient(to right,transparent,#000 35%)}
+.dsh-ws-bamboo svg{width:100%;height:100%;overflow:visible;display:block}
+body[data-ds-dark-theme] .dsh-ws-bamboo{color:#75c98a;opacity:.15}
+.dsh-ws-bamboo [data-ws-sway]{transform-box:view-box;transform-origin:0 0;animation-duration:var(--duration);animation-delay:var(--delay);animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:paused}
+.dsh-ws-bamboo [data-ws-sway="stem"]{animation-name:dsh-ws-stem}
+.dsh-ws-bamboo [data-ws-sway="branch"]{animation-name:dsh-ws-branch}
+.dsh-ws-bamboo [data-ws-sway="leaf"]{animation-name:dsh-ws-leaf}
+body[data-ws-motion]:not([data-ws-hidden]) .dsh-ws-bamboo [data-ws-sway]{animation-play-state:running}
+@keyframes dsh-ws-stem{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(1.05deg)}}
+@keyframes dsh-ws-branch{0%,100%{transform:rotate(calc(-.8deg * var(--bend,1)))}50%{transform:rotate(calc(1.3deg * var(--bend,1)))}}
+@keyframes dsh-ws-leaf{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.8deg)}}
+.dsh-ws-finance{box-sizing:border-box;display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px;width:max-content;max-width:calc(100% - 32px);min-height:34px;margin:0 18px 6px auto;padding:4px 9px;border:1px solid #64856620;border-radius:9px;background:rgb(228 239 226 / 48%);color:var(--ws-muted);font:12px/1.6 var(--dsw-font-family, sans-serif);position:relative}
+body[data-ds-dark-theme] .dsh-ws-finance{background:rgb(41 65 46 / 42%);border-color:#a0b79c25}
+.dsh-ws-fee{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px}.dsh-ws-fee strong{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ws-ink)}
+.dsh-ws-finance .dsh-ws-icon-button{width:22px;height:22px;font-size:14px}
+.dsh-ws-details{position:relative;margin-left:auto}.dsh-ws-details summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px;list-style:none}.dsh-ws-details summary::-webkit-details-marker{display:none}
+.dsh-ws-detail-body{position:absolute;z-index:30;right:0;bottom:calc(100% + 12px);box-sizing:border-box;width:min(360px,70vw);padding:14px 16px;border:1px solid var(--ws-line);border-radius:10px;background:var(--ws-surface);color:var(--ws-ink);box-shadow:0 4px 16px #0002;font-size:13px}
+.dsh-ws-detail-body p{margin:0 0 10px}.dsh-ws-detail-body a{color:var(--ws-accent)}
+.dsh-ws-icon-button{border:0;background:transparent;color:var(--dsw-alias-label-secondary);font:16px/1 sans-serif;width:28px;height:28px;display:inline-grid;place-items:center;cursor:pointer;border-radius:6px;flex:none}.dsh-ws-icon-button:hover{background:var(--dsw-alias-interactive-bg-hover)}
+.dsh-ws-settings{padding:16px 0;border-bottom:1px solid var(--dsw-alias-border-l2);color:var(--dsw-alias-label-primary)}.dsh-ws-settings h3{font-size:14px;font-weight:500;margin:0 0 12px}.dsh-ws-settings label{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:14px;gap:16px}.dsh-ws-settings input{accent-color:var(--dsw-alias-state-business-primary);width:18px;height:18px}.dsh-ws-settings button{font:inherit;font-size:13px;margin-top:12px;padding:6px 12px;border:1px solid var(--dsw-alias-border-l3);border-radius:6px;background:transparent;color:inherit;cursor:pointer}
+@media(max-width:760px){body[data-ws-skin] .dsh-ws-bamboo{opacity:.12;width:75%}.dsh-ws-finance{gap:4px 9px;margin-right:16px}.dsh-ws-details{margin-left:0}.dsh-ws-detail-body{position:fixed;left:16px;right:16px;bottom:24px;width:auto;max-height:60vh;overflow:auto}}
+@media(prefers-reduced-motion:reduce){.dsh-ws-bamboo [data-ws-sway]{animation:none}.dsh-ws-motion{display:none}}

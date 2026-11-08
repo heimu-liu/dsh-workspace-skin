@@ -1,0 +1,47 @@
+{
+  "name": "@laishu/dsh-workspace-skin",
+  "version": "0.1.2",
+  "private": true,
+  "description": "暖纸与雾绿：淡竹影、扣费来源余额与主对话模型费用估算",
+  "type": "module",
+  "main": "./src/host.js",
+  "exports": {
+    ".": "./src/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/host.js",
+    "src/cost.js",
+    "lib/client.js",
+    "README.md",
+    "INSTALL.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/host.js && node --check src/cost.js && node --check src/client.cjs",
+    "prepack": "npm run build",
+    "verify:native": "node scripts/verify-native.mjs"
+  },
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}

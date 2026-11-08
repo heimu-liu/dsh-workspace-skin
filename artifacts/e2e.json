@@ -1,0 +1,100 @@
+{
+  "runtime": "DSH 0.2.2-rc.1, isolated native Web UI",
+  "fixture": "offline model and fake account only; no paid calls",
+  "checks": [
+    {
+      "name": "native-load-and-selected-account-balance",
+      "pass": true
+    },
+    {
+      "name": "native-offline-turn-updates-cost",
+      "pass": true
+    },
+    {
+      "name": "mixed-model-historical-cost-not-repriced",
+      "pass": true
+    },
+    {
+      "name": "layered-bamboo-stems-branches-leaves-move",
+      "pass": true
+    },
+    {
+      "name": "pause-freezes-all-bamboo-layers",
+      "pass": true
+    },
+    {
+      "name": "session-projection-and-motion-restored-after-reload",
+      "pass": true
+    },
+    {
+      "name": "system-reduced-motion",
+      "pass": true
+    },
+    {
+      "name": "unknown-provider-excluded-and-disclosed",
+      "pass": true
+    },
+    {
+      "name": "failed-balance-cleared-and-refresh-recovers",
+      "pass": true
+    },
+    {
+      "name": "late-account-result-not-shown-for-api-source",
+      "pass": true
+    },
+    {
+      "name": "signed-out-balance-is-not-zero",
+      "pass": true
+    },
+    {
+      "name": "native-dark-palette",
+      "pass": true
+    },
+    {
+      "name": "restore-default-removes-skin-and-fees",
+      "pass": true
+    },
+    {
+      "name": "viewport-1440",
+      "pass": true,
+      "overflow": false,
+      "feeWidth": 424.140625,
+      "feeHeight": 34,
+      "feeRight": 1415,
+      "width": 1440,
+      "bambooRight": 1440,
+      "background": "rgba(228, 239, 226, 0.48)",
+      "bambooColor": "rgb(35, 136, 71)"
+    },
+    {
+      "name": "viewport-1024",
+      "pass": true,
+      "overflow": false,
+      "feeWidth": 424.140625,
+      "feeHeight": 34,
+      "feeRight": 999,
+      "width": 1024,
+      "bambooRight": 1024,
+      "background": "rgba(228, 239, 226, 0.48)",
+      "bambooColor": "rgb(35, 136, 71)"
+    },
+    {
+      "name": "viewport-390",
+      "pass": true,
+      "overflow": false,
+      "feeWidth": 351,
+      "feeHeight": 56.796875,
+      "feeRight": 367,
+      "width": 390,
+      "bambooRight": 390,
+      "background": "rgba(228, 239, 226, 0.48)",
+      "bambooColor": "rgb(35, 136, 71)"
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true
+}
